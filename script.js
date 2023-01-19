@@ -2,12 +2,15 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-var currentDate = $('#currentDay')
-var containerElem = $('.container')
+var currentDate = $('#currentDay');  //This will display the current date/time
+var mainContainer = $('.container'); // This will be used to add more time blocks
 
 
 
+var currentDay = moment().format('dddd, MMMM Do'); //uses moment.js to display the date. Was unable to figure out how to use day.js
+currentDate.text(currentDay);
 
+  
 
 
 
